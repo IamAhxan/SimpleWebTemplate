@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif ;;
+}
+header{
+    background-color: #f4f4f4;
+    height: 200px;
+    padding-top: 20px;
+    text-align: center;
+}
+header h1{
+    margin: 5vh auto 5vh 0;
+}
+nav{
+
+    background-color: #333;
+    overflow: hidden;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    background-color: #333;
+
+}
+nav a{
+    text-decoration: none;
+    background-color: #333;
+    color: rgb(207, 184, 184);
+    padding: 16px ;
+    display: block;
+    float: left;
+    transition: background-color 500ms;
+    -webkit-transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -ms-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+}
+nav .right{
+    float: right;
+}
+nav a:hover{
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main{
+    margin-top: 50px;
+    background-color: #f4f4f4;
+}
+.left-col{
+    float: left;
+    width: 75%;
+}
+.card{
+    background-color: rgb(240, 224, 224);
+    color: #5e5757;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.card h2{
+    padding: 10px 0;
+
+}
+.card img{
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+.right-col{
+    float: left;
+    width: 25%;
+}
+.card1{
+    width: 98%;
+    background-color: rgb(240, 224, 224);
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #5e5757;
+}
+.card1>*{
+    padding: 10px;
+}
+.card1 h2{
+    text-align: center;
+}
+.card1 img{
+    width: 100%;
+
+}
+.card2 img{
+    padding: 0;
+}
+main::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+footer{
+    background-color: rgb(240, 224, 224);
+    text-align: center;
+    padding: 20px;
+    color: #5e5757;
+}
+
+
+@media screen and (max-width: 800px) {
+    .left-col, .right-col {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+      nav{
+          height: 200px;
+      }
+    nav ul a {
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin-bottom: auto;
+    }
+    nav ul li{
+        margin: 0;
+    }
+    nav ul .right{
+        float: none;
+        background-color: #333;
+    }
+  }
